@@ -122,6 +122,8 @@ box-shadow: 0px 4px 0px #C5842E;
 		padding: 9px 15px;	
 		cursor: pointer;	
 		margin-right: -10px;	
+		float: right;	
+			
 		}
 		button:active {	
 		box-shadow: 0px 0px 0px;
@@ -185,14 +187,16 @@ background: #FFFFFF;
 box-shadow: 0px 5px 0px rgba(0, 0, 0, 0.25);
 border-radius: 15px;
 padding: 20px;	
+display: flex;			
 			
 		}
 		input {
 			border: none;
 			font-family: simvoni;
 			font-size: 20px;
-			width: 400px;
 			margin-right: 20px;
+			overflow: hidden;
+			width: 100vw;
 		}
 		input:focus {
 			border: none;
@@ -209,9 +213,7 @@ padding: 20px;
 	
 <header style="margin-top: -16px; margin-left: -8px; margin-right: -8px"><a href="https://meower.org"><img style="margin-left:10px;margin-top:10px;filter: brightness(0%)" height="50" src="https://meower.org/assets/logo.png"></a>
 			<ul style="float: right;">
-		<li ><nav><a href="https://app.meower.org">launch</a></nav></li>
-		<li ><nav> <a href="https://svelte.meower.org">svelte</a></nav></li>		
-		<li ><nav> <a href="https://meower.org/downloads">downloads</a></nav></li>
+		<li ><nav><a href="https://meower.org">meower</a></nav></li>		
 		<li ><nav> <a href="https://meower.org/legal/">legal</a></nav></li>
 		<li ><nav> <a href="https://wiki.meower.org">wiki</a></nav></li>
 				
@@ -222,7 +224,7 @@ padding: 20px;
 		
 </header>
 	<div class="fade-in-animation"><div class="container"><center class="centerverticle">
-		<img src="https://meower.org/assets/web.svg"><br><br><br><searchcontainer><input type=text placeholder="Search Anything..."></input><button><strong><img height="30px" src="https://meower.org/assets/search.svg"></strong></button></searchcontainer>
+		<img style="max-width:100%;height:auto;" src="https://meower.org/assets/web.svg"><br><br><br><searchcontainer><input type=text placeholder="Search Anything..."></input><button><strong><img height="30px" src="https://meower.org/assets/search.svg"></strong></button></searchcontainer>
 		<footer<br>
 
 		</center>
